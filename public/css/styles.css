@@ -1,0 +1,40 @@
+body {
+  text-align: center;
+  background-color: silver;
+}
+
+.main-container {
+  margin: 40px;
+}
+.row {
+  justify-content: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.column {
+  margin-left: 20px;
+}
+footer {
+	font-size: 0.8em;
+	text-align: center;
+	background-color: rgba(0, 0, 0, 0.55);
+	width: 50%;
+	color: silver;
+	margin: 0 auto;
+	border-radius: 20px;
+}
+footer > div {
+	display: flex;
+	justify-content: center;
+}
+
+#logoText {
+	text-align: left;
+	padding-top: 3px;
+}
+
+#logo {
+	margin-right: 5px;
+	padding-top: 3px;
+	padding-bottom: 3px;
+}

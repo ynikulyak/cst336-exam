@@ -1,0 +1,43 @@
+<% include partials/header %>
+  <div class="container-fluid main-container">
+    <div class="card main-card heros-card">
+      <div class="card-body ">
+        <div class="card card-make">
+          <h5 class="card-header">California Quiz</h5>
+          <div class="card-body">
+            <h4>
+              Question 2
+            </h4>
+            <div class="qst">
+              <% rows.forEach(function(row, i){ %>
+            <h3>
+              
+              <%= row.question %> </h3>
+             <% }); %>
+            </div>
+            <div class="choices">
+              <% rows.forEach(function(row, i){ %>
+              <input class="form-check-input" type="radio" id="two" name="seal" value="choice1"> <%= row.choice1 %> <br>
+              <input class="form-check-input" type="radio" id="two" name="seal" value="choice2"> <%= row.choice2 %> <br>
+              <input class="form-check-input" type="radio" id="two" name="seal" value="choice3"> <%= row.choice3 %> <br>
+              <input class="form-check-input" type="radio" id="two" name="seal" value="choice4"> <%= row.choice4 %> <br>
+             
+              <% }); %>
+            </div>
+            
+            <div id="score">
+              <h1>
+                
+                Partial Score: 0</h1>
+            </div>
+
+            <button type="button" value="Submit the Answer" id="submit" class="btn btn-secondary submit">Submit the Answer</button>
+            <form action="/nextQuestion" value="3" id="continue" name="qId">
+               <input id="input-continue" type="submit" value="Continue" />
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+</div>
+<% include partials/footer %>
